@@ -14,7 +14,7 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 데브 포스 # the main title
+title: Dev forest # the main title
 
 tagline: 오늘도 성장하는 백엔드 개발자 # it will display as the sub-title
 
