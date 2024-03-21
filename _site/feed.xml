@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Dev forest</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-03-19T15:21:23+09:00</updated>
+  <updated>2024-03-21T16:52:23+09:00</updated>
   <author>
     <name>devforest</name>
     <uri>http://localhost:4000/</uri>
@@ -20,113 +20,44 @@
 
   
   <entry>
-    <title>Customize the Favicon</title>
-    <link href="http://localhost:4000/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
-    <published>2019-08-11T01:34:00+09:00</published>
+    <title>Spring MVC 패턴</title>
+    <link href="http://localhost:4000/posts/%EC%8A%A4%ED%94%84%EB%A7%81-MVC/" rel="alternate" type="text/html" title="Spring MVC 패턴" />
+    <published>2024-03-20T17:24:00+09:00</published>
   
-    <updated>2019-08-11T01:34:00+09:00</updated>
+    <updated>2024-03-20T17:24:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/customize-the-favicon/</id>
-    <content src="http://localhost:4000/posts/customize-the-favicon/" />
+    <id>http://localhost:4000/posts/%EC%8A%A4%ED%94%84%EB%A7%81-MVC/</id>
+    <content src="http://localhost:4000/posts/%EC%8A%A4%ED%94%84%EB%A7%81-MVC/" />
     <author>
-      <name>cotes</name>
+      <name>devforest</name>
     </author>
 
   
     
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
+    <category term="spring" />
     
   
 
-  <summary>The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.
+  <summary>​
+Spring이란
+​
 
-Generate the favicon
-
-Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Getting Started</title>
-    <link href="http://localhost:4000/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
-    <published>2019-08-09T21:55:00+09:00</published>
-  
-    <updated>2019-08-09T21:55:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/getting-started/</id>
-    <content src="http://localhost:4000/posts/getting-started/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
+  Java의 웹 프레임워크로 Java 언어 기반으로 웹 애플리케이션을 만들기 위한 프로그래밍 툴이다.
+  프로젝트를 진행하다보면 분업을 해도 중복된 코드가 존재한다. Spring은 이런 중복코드의 사용률을 줄여주고, 비즈니스 로직을 더 간단하게 해준다.
+​
+    Spring의 주요 특징
+    ​
     
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  <summary>Get started with Chirpy basics in this comprehensive overview. You will learn how to install, configure, and use your first Chirpy-based website, as well as deploy it to a web server.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Writing a New Post</title>
-    <link href="http://localhost:4000/posts/write-a-new-post/" rel="alternate" type="text/html" title="Writing a New Post" />
-    <published>2019-08-08T15:10:00+09:00</published>
-  
-    <updated>2019-08-08T15:10:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/write-a-new-post/</id>
-    <content src="http://localhost:4000/posts/write-a-new-post/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  <summary>This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.
-
-Naming and Path
-
-Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of the root directory. Please note that the EXTENSION must be one of md and markdown. If you want to save time of cre...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Text and Typography</title>
-    <link href="http://localhost:4000/posts/text-and-typography/" rel="alternate" type="text/html" title="Text and Typography" />
-    <published>2019-08-08T12:33:00+09:00</published>
-  
-    <updated>2019-08-08T12:33:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/text-and-typography/</id>
-    <content src="http://localhost:4000/posts/text-and-typography/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Demo" />
-    
-  
-
-  <summary>Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.</summary>
+      IoC (Inversion of Control, 제어의 반전)
+      DI (Dependency Injection, 의존성 주입)
+      AOP (Aspect Object Programming, 관점 지향 프로그래밍)
+      POJO (Plain Old Java Object) 방식
+​
+—
+​
+        Spring MVC란
+        ​
+보통은...</summary>
 
   </entry>
 

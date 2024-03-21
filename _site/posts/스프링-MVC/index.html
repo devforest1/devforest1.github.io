@@ -30,26 +30,26 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Customize the Favicon" />
-<meta name="author" content="Cotes Chung" />
+<meta property="og:title" content="Spring MVC 패턴" />
+<meta name="author" content="devforest" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons." />
-<meta property="og:description" content="The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons." />
-<link rel="canonical" href="http://localhost:4000/posts/customize-the-favicon/" />
-<meta property="og:url" content="http://localhost:4000/posts/customize-the-favicon/" />
+<meta name="description" content="​ Spring이란 ​ Java의 웹 프레임워크로 Java 언어 기반으로 웹 애플리케이션을 만들기 위한 프로그래밍 툴이다. 프로젝트를 진행하다보면 분업을 해도 중복된 코드가 존재한다. Spring은 이런 중복코드의 사용률을 줄여주고, 비즈니스 로직을 더 간단하게 해준다. ​ Spring의 주요 특징 ​ IoC (Inversion of Control, 제어의 반전) DI (Dependency Injection, 의존성 주입) AOP (Aspect Object Programming, 관점 지향 프로그래밍) POJO (Plain Old Java Object) 방식 ​ — ​ Spring MVC란 ​ 보통은 MVC 패턴이라고 말한다. MVC란 Model-View-Controller 의 단어를 줄인 말이다. ​ MVC(Model-View-Controller)는 사용자 인터페이스, 데이터 및 논리 제어를 구현하는 데 널리 사용하는 소프트웨어 디자인 패턴이다. 소프트웨어의 비즈니스 로직과 화면을 구분하는데 중점을 두고 있으며, 이러한 관심사 분리는 더나은 업무의 분리와 향상된 관리를 제공한다. ​ - 디자인 패턴 : 기존 환경 내에서 반복적으로 일어나는 문제들을 어떻게 풀어나갈 것인가에 대한 솔루션 같은 것이다. ​ - 비즈니스 로직 : 사용자의 요구사항을 해결하기 위한 실질적인 코드다. 실제적인 기능을 수행하는 코드를 말한다. ​ ​ MVC 패턴 동작 순서 ​ 1. 클라이언트가 서버에 요청을 한다. ​ 2. 클라이언트가 요청한 URL을 확인후 URL이 있는 Controller의 메소드로 이동한다. ​ 3. Controller는 해당 요청에 필요한 작업을 Service 에 위임한다. ​ 4. Service 는 요청한 필요한 작업을 수행하고, 요청에 대해 DB에 접근해야 한다면 DAO를 요청하여 처리를 위임한다. ​ 5. DAO는 DB 정보를 DTO를 통해 받아 서비스에게 전달한다. ​ 6. Service는 전달받은 데이터를 Controller에 전달한다. ​ 7. Controller 는 Model 객체에게 요청에 맞는 View 정보를 담아 클라이언트에게 Rending 된 화면을 보여주고 요청을 마친다. ​ - 클라이언트가 요청한 URL을 해당하는 Controller로 찾아주는 걸 DispatcherServlet을 통해 찾는다. ​ - Service는 비즈니스 로직을 실제로 구현한다. ​ - DAO란 Data Access Object로 DB의 데이터에 접근하기 위한 객체를 가리킨다. ​ - DTO란 Data Transfer Object로 컨트롤러, 뷰, 비즈니스 로직 계층 간의 데이터 교환을 위한 Java Bean을 의미한다. ​ — ​ Model ​ Model은 Data와 애플리케이션이 무엇을 할 것인지 정의하는 부분이다. 컨트롤러가 호출을 하면 DB와 연동하여 사용자의 입출력 데이터를 다루는 일과 같은 데이터와 연관된 비즈니스 로직을 처리하는 역할을 한다. ​ View ​ View는 사용자에게 보여주는 화면(UI)에 해당한다. 사용자의 상호작용을 하면 컨트롤러부터 모델의 결과값을 사용자에게 화면으로 보여준다. ​ Controller ​ Controller는 Model과 View 사이를 이어주는 역할을 한다. Model이 데이터를 어떻게 처리할지 알려주는 역할을 한다." />
+<meta property="og:description" content="​ Spring이란 ​ Java의 웹 프레임워크로 Java 언어 기반으로 웹 애플리케이션을 만들기 위한 프로그래밍 툴이다. 프로젝트를 진행하다보면 분업을 해도 중복된 코드가 존재한다. Spring은 이런 중복코드의 사용률을 줄여주고, 비즈니스 로직을 더 간단하게 해준다. ​ Spring의 주요 특징 ​ IoC (Inversion of Control, 제어의 반전) DI (Dependency Injection, 의존성 주입) AOP (Aspect Object Programming, 관점 지향 프로그래밍) POJO (Plain Old Java Object) 방식 ​ — ​ Spring MVC란 ​ 보통은 MVC 패턴이라고 말한다. MVC란 Model-View-Controller 의 단어를 줄인 말이다. ​ MVC(Model-View-Controller)는 사용자 인터페이스, 데이터 및 논리 제어를 구현하는 데 널리 사용하는 소프트웨어 디자인 패턴이다. 소프트웨어의 비즈니스 로직과 화면을 구분하는데 중점을 두고 있으며, 이러한 관심사 분리는 더나은 업무의 분리와 향상된 관리를 제공한다. ​ - 디자인 패턴 : 기존 환경 내에서 반복적으로 일어나는 문제들을 어떻게 풀어나갈 것인가에 대한 솔루션 같은 것이다. ​ - 비즈니스 로직 : 사용자의 요구사항을 해결하기 위한 실질적인 코드다. 실제적인 기능을 수행하는 코드를 말한다. ​ ​ MVC 패턴 동작 순서 ​ 1. 클라이언트가 서버에 요청을 한다. ​ 2. 클라이언트가 요청한 URL을 확인후 URL이 있는 Controller의 메소드로 이동한다. ​ 3. Controller는 해당 요청에 필요한 작업을 Service 에 위임한다. ​ 4. Service 는 요청한 필요한 작업을 수행하고, 요청에 대해 DB에 접근해야 한다면 DAO를 요청하여 처리를 위임한다. ​ 5. DAO는 DB 정보를 DTO를 통해 받아 서비스에게 전달한다. ​ 6. Service는 전달받은 데이터를 Controller에 전달한다. ​ 7. Controller 는 Model 객체에게 요청에 맞는 View 정보를 담아 클라이언트에게 Rending 된 화면을 보여주고 요청을 마친다. ​ - 클라이언트가 요청한 URL을 해당하는 Controller로 찾아주는 걸 DispatcherServlet을 통해 찾는다. ​ - Service는 비즈니스 로직을 실제로 구현한다. ​ - DAO란 Data Access Object로 DB의 데이터에 접근하기 위한 객체를 가리킨다. ​ - DTO란 Data Transfer Object로 컨트롤러, 뷰, 비즈니스 로직 계층 간의 데이터 교환을 위한 Java Bean을 의미한다. ​ — ​ Model ​ Model은 Data와 애플리케이션이 무엇을 할 것인지 정의하는 부분이다. 컨트롤러가 호출을 하면 DB와 연동하여 사용자의 입출력 데이터를 다루는 일과 같은 데이터와 연관된 비즈니스 로직을 처리하는 역할을 한다. ​ View ​ View는 사용자에게 보여주는 화면(UI)에 해당한다. 사용자의 상호작용을 하면 컨트롤러부터 모델의 결과값을 사용자에게 화면으로 보여준다. ​ Controller ​ Controller는 Model과 View 사이를 이어주는 역할을 한다. Model이 데이터를 어떻게 처리할지 알려주는 역할을 한다." />
+<link rel="canonical" href="http://localhost:4000/posts/%EC%8A%A4%ED%94%84%EB%A7%81-MVC/" />
+<meta property="og:url" content="http://localhost:4000/posts/%EC%8A%A4%ED%94%84%EB%A7%81-MVC/" />
 <meta property="og:site_name" content="Dev forest" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-08-11T01:34:00+09:00" />
+<meta property="article:published_time" content="2024-03-20T17:24:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Customize the Favicon" />
+<meta property="twitter:title" content="Spring MVC 패턴" />
 <meta name="twitter:site" content="@twitter_username" />
-<meta name="twitter:creator" content="@cotes2020" />
+<meta name="twitter:creator" content="@devforest" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Cotes Chung","url":"https://github.com/cotes2020/"},"dateModified":"2019-08-11T01:34:00+09:00","datePublished":"2019-08-11T01:34:00+09:00","description":"The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.","headline":"Customize the Favicon","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/customize-the-favicon/"},"url":"http://localhost:4000/posts/customize-the-favicon/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"devforest"},"dateModified":"2024-03-20T17:24:00+09:00","datePublished":"2024-03-20T17:24:00+09:00","description":"​ Spring이란 ​ Java의 웹 프레임워크로 Java 언어 기반으로 웹 애플리케이션을 만들기 위한 프로그래밍 툴이다. 프로젝트를 진행하다보면 분업을 해도 중복된 코드가 존재한다. Spring은 이런 중복코드의 사용률을 줄여주고, 비즈니스 로직을 더 간단하게 해준다. ​ Spring의 주요 특징 ​ IoC (Inversion of Control, 제어의 반전) DI (Dependency Injection, 의존성 주입) AOP (Aspect Object Programming, 관점 지향 프로그래밍) POJO (Plain Old Java Object) 방식 ​ — ​ Spring MVC란 ​ 보통은 MVC 패턴이라고 말한다. MVC란 Model-View-Controller 의 단어를 줄인 말이다. ​ MVC(Model-View-Controller)는 사용자 인터페이스, 데이터 및 논리 제어를 구현하는 데 널리 사용하는 소프트웨어 디자인 패턴이다. 소프트웨어의 비즈니스 로직과 화면을 구분하는데 중점을 두고 있으며, 이러한 관심사 분리는 더나은 업무의 분리와 향상된 관리를 제공한다. ​ - 디자인 패턴 : 기존 환경 내에서 반복적으로 일어나는 문제들을 어떻게 풀어나갈 것인가에 대한 솔루션 같은 것이다. ​ - 비즈니스 로직 : 사용자의 요구사항을 해결하기 위한 실질적인 코드다. 실제적인 기능을 수행하는 코드를 말한다. ​ ​ MVC 패턴 동작 순서 ​ 1. 클라이언트가 서버에 요청을 한다. ​ 2. 클라이언트가 요청한 URL을 확인후 URL이 있는 Controller의 메소드로 이동한다. ​ 3. Controller는 해당 요청에 필요한 작업을 Service 에 위임한다. ​ 4. Service 는 요청한 필요한 작업을 수행하고, 요청에 대해 DB에 접근해야 한다면 DAO를 요청하여 처리를 위임한다. ​ 5. DAO는 DB 정보를 DTO를 통해 받아 서비스에게 전달한다. ​ 6. Service는 전달받은 데이터를 Controller에 전달한다. ​ 7. Controller 는 Model 객체에게 요청에 맞는 View 정보를 담아 클라이언트에게 Rending 된 화면을 보여주고 요청을 마친다. ​ - 클라이언트가 요청한 URL을 해당하는 Controller로 찾아주는 걸 DispatcherServlet을 통해 찾는다. ​ - Service는 비즈니스 로직을 실제로 구현한다. ​ - DAO란 Data Access Object로 DB의 데이터에 접근하기 위한 객체를 가리킨다. ​ - DTO란 Data Transfer Object로 컨트롤러, 뷰, 비즈니스 로직 계층 간의 데이터 교환을 위한 Java Bean을 의미한다. ​ — ​ Model ​ Model은 Data와 애플리케이션이 무엇을 할 것인지 정의하는 부분이다. 컨트롤러가 호출을 하면 DB와 연동하여 사용자의 입출력 데이터를 다루는 일과 같은 데이터와 연관된 비즈니스 로직을 처리하는 역할을 한다. ​ View ​ View는 사용자에게 보여주는 화면(UI)에 해당한다. 사용자의 상호작용을 하면 컨트롤러부터 모델의 결과값을 사용자에게 화면으로 보여준다. ​ Controller ​ Controller는 Model과 View 사이를 이어주는 역할을 한다. Model이 데이터를 어떻게 처리할지 알려주는 역할을 한다.","headline":"Spring MVC 패턴","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%EC%8A%A4%ED%94%84%EB%A7%81-MVC/"},"url":"http://localhost:4000/posts/%EC%8A%A4%ED%94%84%EB%A7%81-MVC/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Customize the Favicon | Dev forest
+  <title>Spring MVC 패턴 | Dev forest
   </title>
 
   <!--
@@ -465,7 +465,7 @@
         
           
             
-              <span>Customize the Favicon</span>
+              <span>Spring MVC 패턴</span>
             
 
           
@@ -548,6 +548,11 @@
   
 
   
+
+  
+  
+
+  
     
     
 
@@ -577,6 +582,17 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -585,10 +601,59 @@
   
 
   
+    
+    
 
-  
-  
+    
+      
+        
+        
+      
 
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
   
@@ -606,7 +671,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>Customize the Favicon</h1>
+    <h1 data-toc-skip>Spring MVC 패턴</h1>
     
 
     <div class="post-meta text-muted">
@@ -623,13 +688,13 @@
 
 <time
   
-  data-ts="1565454840"
+  data-ts="1710923040"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Aug 11, 2019
+  Mar 20, 2024
 </time>
 
       </span>
@@ -649,7 +714,7 @@
           <em>
             
               
-                <a href="https://github.com/cotes2020/">Cotes Chung</a>
+                
                 
               
             
@@ -681,9 +746,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="212 words"
+  title="915 words"
 >
-  <em>1 min</em> read</span>
+  <em>5 min</em> read</span>
 
         </div>
       </div>
@@ -691,55 +756,82 @@
   </header>
 
   <div class="content">
-    <p>The <a href="https://www.favicon-generator.org/about/">favicons</a> of <a href="https://github.com/cotes2020/jekyll-theme-chirpy/"><strong>Chirpy</strong></a> are placed in the directory <code class="language-plaintext filepath highlighter-rouge">assets/img/favicons/</code>. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.</p>
-
-<h2 id="generate-the-favicon"><span class="me-2">Generate the favicon</span><a href="#generate-the-favicon" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool <a href="https://realfavicongenerator.net/"><strong>Real Favicon Generator</strong></a> and click the button <kbd>Select your Favicon image</kbd> to upload your image file.</p>
-
-<p>In the next step, the webpage will show all usage scenarios. You can keep the default options, scroll to the bottom of the page, and click the button <kbd>Generate your Favicons and HTML code</kbd> to generate the favicon.</p>
-
-<h2 id="download--replace"><span class="me-2">Download &amp; Replace</span><a href="#download--replace" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>Download the generated package, unzip and delete the following two from the extracted files:</p>
-
+    <p>​</p>
+<h3 id="spring이란"><span class="me-2">Spring이란</span><a href="#spring이란" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>​</p>
 <ul>
-  <li><code class="language-plaintext filepath highlighter-rouge">browserconfig.xml</code></li>
-  <li><code class="language-plaintext filepath highlighter-rouge">site.webmanifest</code></li>
+  <li>Java의 웹 프레임워크로 Java 언어 기반으로 웹 애플리케이션을 만들기 위한 프로그래밍 툴이다.</li>
+  <li>프로젝트를 진행하다보면 분업을 해도 중복된 코드가 존재한다. Spring은 이런 중복코드의 사용률을 줄여주고, 비즈니스 로직을 더 간단하게 해준다.
+​
+    <h3 id="spring의-주요-특징"><span class="me-2">Spring의 주요 특징</span><a href="#spring의-주요-특징" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+    <p>​</p>
+    <ol>
+      <li>IoC (Inversion of Control, 제어의 반전)</li>
+      <li>DI (Dependency Injection, 의존성 주입)</li>
+      <li>AOP (Aspect Object Programming, 관점 지향 프로그래밍)</li>
+      <li>POJO (Plain Old Java Object) 방식
+​
+—
+​
+        <h3 id="spring-mvc란"><span class="me-2">Spring MVC란</span><a href="#spring-mvc란" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+        <p>​
+보통은 MVC 패턴이라고 말한다. MVC란 Model-View-Controller 의 단어를 줄인 말이다.
+​</p>
+        <blockquote>
+          <p>MVC(Model-View-Controller)는 사용자 인터페이스, 데이터 및 논리 제어를 구현하는 데 널리 사용하는 소프트웨어 디자인 패턴이다. 소프트웨어의 비즈니스 로직과 화면을 구분하는데 중점을 두고 있으며, 이러한 관심사 분리는 더나은 업무의 분리와 향상된 관리를 제공한다.
+​
+- 디자인 패턴 : 기존 환경 내에서 반복적으로 일어나는 문제들을 어떻게 풀어나갈 것인가에 대한 솔루션 같은 것이다.
+​
+- 비즈니스 로직 : 사용자의 요구사항을 해결하기 위한 실질적인 코드다. 실제적인 기능을 수행하는 코드를 말한다.
+​
+​</p>
+          <h4 id="mvc-패턴-동작-순서"><span class="me-2">MVC 패턴 동작 순서</span><a href="#mvc-패턴-동작-순서" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+          <p>​
+1. 클라이언트가 서버에 요청을 한다.
+​
+2. 클라이언트가 요청한 URL을 확인후 URL이 있는 Controller의 메소드로 이동한다.
+​
+3. Controller는 해당 요청에 필요한 작업을 Service 에 위임한다.
+​
+4. Service 는 요청한 필요한 작업을 수행하고, 요청에 대해 DB에 접근해야 한다면 DAO를 요청하여 처리를 위임한다.
+​
+5. DAO는 DB 정보를 DTO를 통해 받아 서비스에게 전달한다.
+​
+6. Service는 전달받은 데이터를 Controller에 전달한다.
+​
+7. Controller 는 Model 객체에게 요청에 맞는 View 정보를 담아 클라이언트에게 Rending 된 화면을 보여주고 요청을 마친다.
+​
+- 클라이언트가 요청한 URL을 해당하는 Controller로 찾아주는 걸 DispatcherServlet을 통해 찾는다.
+​
+- Service는 비즈니스 로직을 실제로 구현한다.
+​
+- DAO란 Data Access Object로 DB의 데이터에 접근하기 위한 객체를 가리킨다.
+​
+- DTO란 Data Transfer Object로 컨트롤러, 뷰, 비즈니스 로직 계층 간의 데이터 교환을 위한 Java Bean을 의미한다.
+​
+—
+​</p>
+          <h4 id="model"><span class="me-2">Model</span><a href="#model" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+          <p>​</p>
+        </blockquote>
+      </li>
+    </ol>
+  </li>
+  <li>Model은 Data와 애플리케이션이 무엇을 할 것인지 정의하는 부분이다.</li>
+  <li>컨트롤러가 호출을 하면 DB와 연동하여 사용자의 입출력 데이터를 다루는 일과 같은 데이터와 연관된 비즈니스 로직을 처리하는 역할을 한다.
+​
+    <h4 id="view"><span class="me-2">View</span><a href="#view" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+    <p>​</p>
+  </li>
+  <li>View는 사용자에게 보여주는 화면(UI)에 해당한다.</li>
+  <li>사용자의 상호작용을 하면 컨트롤러부터 모델의 결과값을 사용자에게 화면으로 보여준다.
+​
+    <h4 id="controller"><span class="me-2">Controller</span><a href="#controller" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+    <p>​</p>
+  </li>
+  <li>Controller는 Model과 View 사이를 이어주는 역할을 한다.</li>
+  <li>Model이 데이터를 어떻게 처리할지 알려주는 역할을 한다.</li>
 </ul>
-
-<p>And then copy the remaining image files (<code class="language-plaintext filepath highlighter-rouge">.PNG</code> and <code class="language-plaintext filepath highlighter-rouge">.ICO</code>) to cover the original files in the directory <code class="language-plaintext filepath highlighter-rouge">assets/img/favicons/</code> of your Jekyll site. If your Jekyll site doesn’t have this directory yet, just create one.</p>
-
-<p>The following table will help you understand the changes to the favicon files:</p>
-
-<div class="table-wrapper"><table>
-  <thead>
-    <tr>
-      <th>File(s)</th>
-      <th style="text-align: center">From Online Tool</th>
-      <th style="text-align: center">From Chirpy</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">*.PNG</code></td>
-      <td style="text-align: center">✓</td>
-      <td style="text-align: center">✗</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">*.ICO</code></td>
-      <td style="text-align: center">✓</td>
-      <td style="text-align: center">✗</td>
-    </tr>
-  </tbody>
-</table></div>
-
-<!-- markdownlint-disable-next-line -->
-<blockquote class="prompt-info">
-  <p>✓ means keep, ✗ means delete.</p>
-</blockquote>
-
-<p>The next time you build the site, the favicon will be replaced with a customized edition.</p>
 
   </div>
 
@@ -749,8 +841,7 @@
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/blogging/">Blogging</a>,
-          <a href="/categories/tutorial/">Tutorial</a>
+          <a href="/categories/spring/">spring</a>
       </div>
     
 
@@ -760,9 +851,14 @@
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/favicon/"
+            href="/tags/spring/"
             class="post-tag no-text-decoration"
-          >favicon</a>
+          >spring</a>
+        
+          <a
+            href="/tags/framework/"
+            class="post-tag no-text-decoration"
+          >framework</a>
         
       </div>
     
@@ -798,21 +894,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=Customize%20the%20Favicon%20-%20Dev%20forest&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fcustomize-the-favicon%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=Spring%20MVC%20%ED%8C%A8%ED%84%B4%20-%20Dev%20forest&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25EC%258A%25A4%25ED%2594%2584%25EB%25A7%2581-MVC%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=Customize%20the%20Favicon%20-%20Dev%20forest&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fcustomize-the-favicon%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Spring%20MVC%20%ED%8C%A8%ED%84%B4%20-%20Dev%20forest&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25EC%258A%25A4%25ED%2594%2584%25EB%25A7%2581-MVC%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fcustomize-the-favicon%2F&text=Customize%20the%20Favicon%20-%20Dev%20forest" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25EC%258A%25A4%25ED%2594%2584%25EB%25A7%2581-MVC%2F&text=Spring%20MVC%20%ED%8C%A8%ED%84%B4%20-%20Dev%20forest" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -867,28 +963,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/customize-the-favicon/">Customize the Favicon</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/getting-started/">Getting Started</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/write-a-new-post/">Writing a New Post</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/text-and-typography/">Text and Typography</a>
+          <a href="/posts/%EC%8A%A4%ED%94%84%EB%A7%81-MVC/">Spring MVC 패턴</a>
         </li>
       
     </ul>
@@ -937,59 +1012,6 @@
         
         
 
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
 
 
   <section>
@@ -997,16 +1019,10 @@
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/framework/">framework</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/writing/">writing</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/spring/">spring</a>
       
     </div>
   </section>
@@ -1062,41 +1078,6 @@
 
   
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
 
 
 
@@ -1106,101 +1087,6 @@
 
 
 
-
-
-  <aside id="related-posts" aria-labelledby="related-label">
-    <h3 class="mb-4" id="related-label">Further Reading</h3>
-    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
-      
-        <article class="col">
-          <a href="/posts/write-a-new-post/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1565244600"
-  data-df="ll"
-  
->
-  Aug  8, 2019
-</time>
-
-              <h4 class="pt-0 my-2">Writing a New Post</h4>
-              <div class="text-muted">
-                <p>This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.
-
-Naming and...</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/getting-started/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1565355300"
-  data-df="ll"
-  
->
-  Aug  9, 2019
-</time>
-
-              <h4 class="pt-0 my-2">Getting Started</h4>
-              <div class="text-muted">
-                <p>Get started with Chirpy basics in this comprehensive overview. You will learn how to install, configure, and use your first Chirpy-based website, as well as deploy it to a web server.</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/text-and-typography/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1565235180"
-  data-df="ll"
-  
->
-  Aug  8, 2019
-</time>
-
-              <h4 class="pt-0 my-2">Text and Typography</h4>
-              <div class="text-muted">
-                <p>Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-    </nav>
-  </aside>
-  <!-- #related-posts -->
 
 
             
@@ -1212,13 +1098,9 @@ Naming and...</p>
   
 
   
-    <a
-      href="/posts/getting-started/"
-      class="btn btn-outline-primary"
-      aria-label="Older"
-    >
-      <p>Getting Started</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Older">
+      <p>-</p>
+    </div>
   
 
   
@@ -1320,59 +1202,6 @@ Naming and...</p>
         
         
 
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
 
 
   <section>
@@ -1380,16 +1209,10 @@ Naming and...</p>
     <div class="d-flex flex-wrap mt-3 mb-1 me-3">
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/favicon/">favicon</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/framework/">framework</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/getting-started/">getting started</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/typography/">typography</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/tags/writing/">writing</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/spring/">spring</a>
       
     </div>
   </section>
