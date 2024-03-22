@@ -30,24 +30,26 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Tags" />
+<meta property="og:title" content="JPA 사용시 생기는 N+1 문제" />
+<meta name="author" content="devforest" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<link rel="canonical" href="http://localhost:4000/tags/" />
-<meta property="og:url" content="http://localhost:4000/tags/" />
+<meta name="description" content="​ JPA N+1 문제란 ​ N + 1 문제란 1번의 쿼리를 날렸을 떄 의도하지 않은 N번의 쿼리가 추가적으로 실행되는 것을 의미한다. ​ 어떤 상황에 발생되는가?" />
+<meta property="og:description" content="​ JPA N+1 문제란 ​ N + 1 문제란 1번의 쿼리를 날렸을 떄 의도하지 않은 N번의 쿼리가 추가적으로 실행되는 것을 의미한다. ​ 어떤 상황에 발생되는가?" />
+<link rel="canonical" href="http://localhost:4000/posts/JPA-N+1/" />
+<meta property="og:url" content="http://localhost:4000/posts/JPA-N+1/" />
 <meta property="og:site_name" content="Dev forest" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-03-22T20:08:44+09:00" />
+<meta property="article:published_time" content="2024-03-22T04:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Tags" />
+<meta property="twitter:title" content="JPA 사용시 생기는 N+1 문제" />
 <meta name="twitter:site" content="@twitter_username" />
+<meta name="twitter:creator" content="@devforest" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-03-22T20:08:44+09:00","datePublished":"2024-03-22T20:08:44+09:00","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"Tags","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tags/"},"url":"http://localhost:4000/tags/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"devforest"},"dateModified":"2024-03-22T04:00:00+09:00","datePublished":"2024-03-22T04:00:00+09:00","description":"​ JPA N+1 문제란 ​ N + 1 문제란 1번의 쿼리를 날렸을 떄 의도하지 않은 N번의 쿼리가 추가적으로 실행되는 것을 의미한다. ​ 어떤 상황에 발생되는가?","headline":"JPA 사용시 생기는 N+1 문제","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/JPA-N+1/"},"url":"http://localhost:4000/posts/JPA-N+1/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Tags | Dev forest
+  <title>JPA 사용시 생기는 N+1 문제 | Dev forest
   </title>
 
   <!--
@@ -104,9 +106,16 @@
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
   
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.25.0/dist/tocbot.min.css">
   
 
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+  
+
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
   
 
   <!-- JavaScript -->
@@ -298,7 +307,7 @@
         </li>
         <!-- .nav-item -->
       
-        <li class="nav-item active">
+        <li class="nav-item">
           <a href="/tags/" class="nav-link">
             <i class="fa-fw fas fa-tags"></i>
             
@@ -453,8 +462,10 @@
           
         
           
+        
+          
             
-              <span>Tags</span>
+              <span>JPA 사용시 생기는 N+1 문제</span>
             
 
           
@@ -468,7 +479,7 @@
     </button>
 
     <div id="topbar-title">
-      Tags
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -494,48 +505,488 @@
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-              
+              <!-- Refactor the HTML structure -->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+
+<!-- Handle images -->
+
+
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
 
 
 
 <article class="px-1">
+  <header>
+    <h1 data-toc-skip>JPA 사용시 생기는 N+1 문제</h1>
+    
+
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
   
+  data-ts="1711047600"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Mar 22, 2024
+</time>
+
+      </span>
+
+      <!-- lastmod date -->
+      
+
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
+              
+                
+                
+              
+            
+          </em>
+        </span>
+
+        <div>
+          <!-- pageviews -->
+          
+
+          <!-- read time -->
+          <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="552 words"
+>
+  <em>3 min</em> read</span>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+    <p>​</p>
+<h2 id="jpa-n1-문제란"><span class="me-2">JPA N+1 문제란</span><a href="#jpa-n1-문제란" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>​</p>
+<ul>
+  <li>N + 1 문제란 1번의 쿼리를 날렸을 떄 의도하지 않은 N번의 쿼리가 추가적으로 실행되는 것을 의미한다.
+​
+    <h3 id="어떤-상황에-발생되는가"><span class="me-2">어떤 상황에 발생되는가?</span><a href="#어떤-상황에-발생되는가" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+  </li>
+  <li>JPA Fetch 전략이 EAGER 전략으로 데이터를 조회하는 경우</li>
+  <li>JPA Fetch 전략이 LAZY 전략으로 데이터를 가져온 이후에 연관 관계인 하위 엔티티를 다시 조회하는 경우</li>
+</ul>
+
+<h3 id="왜-발생하는가"><span class="me-2">왜 발생하는가?</span><a href="#왜-발생하는가" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<ul>
+  <li>JPA Repository 로 find 시 실행하는 첫 쿼리에서 하위 엔티티까지 한번에 가져오지 않고, 하위 텐티티를 사용할 때 추가로 조회하기 때문이다.
+​
+[JPA N+1 문제 대한 프로젝트] (https://github.com/devforest1/n_plus)</li>
+</ul>
+
+<p><br /></p>
+
+<hr />
+
+<h2 id="n1-문제-해결-방법"><span class="me-2">N+1 문제 해결 방법</span><a href="#n1-문제-해결-방법" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<h3 id="1-fetch-join-패치-조인"><span class="me-2">1. Fetch Join (패치 조인)</span><a href="#1-fetch-join-패치-조인" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<ul>
+  <li>N+1 자체가 발생하는 이유는 한쪽 테이블만 조회하고 연결된 다른 테이블은 따로 조회하기 때문이다. 미리 두 테이블을 JOIN 하여 한 번에 데이터를 가져올 수 있다면 애초에 N+1 문제가 발생하지 않는다.</li>
+</ul>
+
+<p><br /></p>
+
+<p>[Repository 선언]</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>    @Query("select DISTINCT o from Owner o join fetch o.pets")
+    List&lt;Owner&gt; findAllJoinFetch();
+</pre></td></tr></tbody></table></code></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre>    @Test
+    void test() {
+        ...
+        System.out.println("----------------------")
+        List&lt;Owner&gt; owerList = ownerRepository.findAllJoinFetch();
+    }
+</pre></td></tr></tbody></table></code></div></div>
+
+<h4 id="fetch-join-패치조인의-단점"><span class="me-2">Fetch Join (패치조인)의 단점</span><a href="#fetch-join-패치조인의-단점" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<ul>
+  <li>쿼리 한번에 모든 데이터를 가져오기 떄문에 JPA가 제공하는 Paging API 사용 불가능</li>
+  <li>1:N 관계가 두 개 이상인 경우 사용 불가</li>
+  <li>패치 조인 대상에게 별칭(as) 부여 불가능</li>
+</ul>
+
+<p><br /></p>
+
+<h3 id="entity-graph"><span class="me-2">@Entity Graph</span><a href="#entity-graph" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+
+<ul>
+  <li>@EntityGraph 의 attributePaths 는 같이 조회할 연관 엔티티명을 적으면 된다. ,(콤마)를 통해 여러 개를 줄 수도 있다.</li>
+</ul>
+
+<p>[Repository 선언]</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>    @EntityGraph(attributePaths = {"pets"})
+    @Query("select DISTINCT o from Owner o")
+    List&lt;Owner&gt; findAllEntityGraph();
+</pre></td></tr></tbody></table></code></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre>    @Test
+    void test() {
+        ...
+        System.out.println("----------------------")
+        List&lt;Owner&gt; owerList = ownerRepository.findAllEntityGraph();
+    }
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br /></p>
+
+<h3 id="fetch-join과-entitygraph-사용시-주의할-점"><span class="me-2">Fetch Join과 EntityGraph 사용시 주의할 점</span><a href="#fetch-join과-entitygraph-사용시-주의할-점" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<ul>
+  <li>공통적으로 카테시안 곱(Cartesian Product)이 발생하여 중복이 생길 수 있다. JPQL에 DISTINCT 를 추가하여 중복을 제거하거나 OneToMany 필드 타입에 Set으로 선언하여 중복 제거하는 방법이 있다.</li>
+</ul>
+
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
+    
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/spring/">spring</a>
+      </div>
+    
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/spring/"
+            class="post-tag no-text-decoration"
+          >spring</a>
+        
+          <a
+            href="/tags/jpa/"
+            class="post-tag no-text-decoration"
+          >jpa</a>
+        
+      </div>
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+          
+
+          This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+        
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
     
     
-    <h1 class="dynamic-title">
-      Tags
-    </h1>
-    <div class="content">
-      <div id="tags" class="d-flex flex-wrap mx-xl-2">
-  
-  
+    
 
-  
+    
 
-  
-    <div>
-      <a class="tag" href="/tags/framework/">
-        framework<span class="text-muted">1</span>
+      
+
+      <a href="https://twitter.com/intent/tweet?text=JPA%20%EC%82%AC%EC%9A%A9%EC%8B%9C%20%EC%83%9D%EA%B8%B0%EB%8A%94%20N+1%20%EB%AC%B8%EC%A0%9C%20-%20Dev%20forest&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJPA-N%2B1%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
-    </div>
-  
-    <div>
-      <a class="tag" href="/tags/jpa/">
-        jpa<span class="text-muted">1</span>
+    
+
+      
+
+      <a href="https://www.facebook.com/sharer/sharer.php?title=JPA%20%EC%82%AC%EC%9A%A9%EC%8B%9C%20%EC%83%9D%EA%B8%B0%EB%8A%94%20N+1%20%EB%AC%B8%EC%A0%9C%20-%20Dev%20forest&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJPA-N%2B1%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+        <i class="fa-fw fab fa-facebook-square"></i>
       </a>
-    </div>
-  
-    <div>
-      <a class="tag" href="/tags/spring/">
-        spring<span class="text-muted">2</span>
+    
+
+      
+
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJPA-N%2B1%2F&text=JPA%20%EC%82%AC%EC%9A%A9%EC%8B%9C%20%EC%83%9D%EA%B8%B0%EB%8A%94%20N+1%20%EB%AC%B8%EC%A0%9C%20-%20Dev%20forest" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+        <i class="fa-fw fab fa-telegram"></i>
       </a>
-    </div>
-  
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
 </div>
 
     </div>
-  
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
 </article>
+
 
             
           </main>
@@ -663,12 +1114,152 @@
             </div>
 
             
+              
+              
+
+
+
+  <section id="toc-wrapper" class="ps-0 pe-4">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/%EC%8A%A4%ED%94%84%EB%A7%81-MVC/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1710923040"
+  data-df="ll"
+  
+>
+  Mar 20, 2024
+</time>
+
+              <h4 class="pt-0 my-2">Spring MVC 패턴</h4>
+              <div class="text-muted">
+                <p>​
+Spring이란
+​
+
+  Java의 웹 프레임워크로 Java 언어 기반으로 웹 애플리케이션을 만들기 위한 프로그래밍 툴이다.
+  프로젝트를 진행하다보면 분업을 해도 중복된 코드가 존재한다. Spring은 이런 중복코드의 사용률을 줄여주고, 비즈니스 로직을 더 간단하게 해준다.
+​
+    Spring의 주요 특징
+    ​
+    
+      IoC...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/%EC%8A%A4%ED%94%84%EB%A7%81-MVC/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>Spring MVC 패턴</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
+            
+              
+              <!--  The comments switcher -->
+
+
             
 
             <!-- The Footer -->
@@ -851,6 +1442,13 @@
 
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -886,20 +1484,80 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/en.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.25.0/dist/tocbot.min.js"></script>
 
 
 
 
 
 
-<script defer src="/assets/js/dist/commons.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 
 <!-- Pageviews -->
+
+  
+
+  
 
 
 

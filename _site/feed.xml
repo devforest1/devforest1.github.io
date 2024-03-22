@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Dev forest</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-03-21T17:11:44+09:00</updated>
+  <updated>2024-03-22T20:08:44+09:00</updated>
   <author>
     <name>devforest</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,61 @@
 
   
   <entry>
+    <title>JPA 사용시 생기는 N+1 문제</title>
+    <link href="http://localhost:4000/posts/JPA-N+1/" rel="alternate" type="text/html" title="JPA 사용시 생기는 N+1 문제" />
+    <published>2024-03-22T04:00:00+09:00</published>
+  
+    <updated>2024-03-22T04:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/JPA-N+1/</id>
+    <content src="http://localhost:4000/posts/JPA-N+1/" />
+    <author>
+      <name>devforest</name>
+    </author>
+
+  
+    
+    <category term="spring" />
+    
+  
+
+  <summary>​
+JPA N+1 문제란
+​
+
+  N + 1 문제란 1번의 쿼리를 날렸을 떄 의도하지 않은 N번의 쿼리가 추가적으로 실행되는 것을 의미한다.
+​
+    어떤 상황에 발생되는가?
+  
+  JPA Fetch 전략이 EAGER 전략으로 데이터를 조회하는 경우
+  JPA Fetch 전략이 LAZY 전략으로 데이터를 가져온 이후에 연관 관계인 하위 엔티티를 다시 조회하는 경우
+
+
+왜 발생하는가?
+
+
+  JPA Repository 로 find 시 실행하는 첫 쿼리에서 하위 엔티티까지 한번에 가져오지 않고, 하위 텐티티를 사용할 때 추가로 조회하기 때문이다.
+​
+[JPA N+1 문제 대한 프로젝트] (https://github.com/devforest1/n_plus)
+
+
+
+
+
+
+N+1 문제 해결 방법
+
+1. Fet...</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>Spring MVC 패턴</title>
     <link href="http://localhost:4000/posts/%EC%8A%A4%ED%94%84%EB%A7%81-MVC/" rel="alternate" type="text/html" title="Spring MVC 패턴" />
     <published>2024-03-20T17:24:00+09:00</published>
   
-    <updated>2024-03-20T17:24:00+09:00</updated>
+    <updated>2024-03-21T17:12:11+09:00</updated>
   
     <id>http://localhost:4000/posts/%EC%8A%A4%ED%94%84%EB%A7%81-MVC/</id>
     <content src="http://localhost:4000/posts/%EC%8A%A4%ED%94%84%EB%A7%81-MVC/" />
